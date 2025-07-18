@@ -4,13 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trade Alert Opt-In | Earl_Bullish_Engulfing_Trader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+    }
+    h2 {
+      color: #5a3ff2;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .consent {
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #5a3ff2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>Earl_Bullish_Engulfing_Trader™ Alert Service</h1>
-  <p>You are receiving trade alerts from this bot with your permission.</p>
-  <p>By opting in, you agree to receive SMS notifications when trade setups trigger or close. You can opt out anytime by replying STOP.</p>
-  <br>
-  <p><strong>Created by:</strong> Sakena Nixon Enterprises</p>
+  <h2>Please provide your contact details</h2>
+
+  <form>
+    <label for="first">First name*</label>
+    <input type="text" id="first" name="first" required />
+
+    <label for="last">Last name*</label>
+    <input type="text" id="last" name="last" required />
+
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone number*</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required />
+
+    <label><input type="checkbox" required /> I would like to receive offers and news</label>
+    <label><input type="checkbox" required /> I accept the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></label>
+
+    <div class="consent">
+      By providing your phone number you agree to receive informational text messages from <strong>Earl Bot Alerts</strong>. Consent is not a condition of purchase. Frequency: Up to 4 msgs/mo. Msg & data rates may apply. Reply STOP to cancel. Reply HELP for help.
+    </div>
+
+    <button type="submit">CONTINUE</button>
+  </form>
+
+  <p style="margin-top: 30px;"><strong>Created by:</strong> Sakena Nixon Enterprises</p>
   <p><strong>Contact:</strong> tradequeen.sn@gmail.com</p>
 </body>
 </html>
