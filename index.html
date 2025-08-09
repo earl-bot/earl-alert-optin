@@ -6,108 +6,123 @@
   <title>SMS Alerts for Earl Bot</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
       font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
       text-align: center;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
-    .logo img {
-      height: 120px;
-      margin-top: 20px;
+    header {
+      background-color: #111;
+      padding: 15px;
     }
     h1 {
       color: orange;
-      margin-top: 10px;
+    }
+    p {
+      color: #ccc;
     }
     form {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: #1e1e1e;
       padding: 20px;
+      border-radius: 10px;
       display: inline-block;
       text-align: left;
-      border-radius: 10px;
       margin-top: 20px;
     }
-    input[type="text"], input[type="email"], input[type="tel"] {
-      width: 250px;
+    input, button {
+      display: block;
+      width: 100%;
       padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    label {
-      font-size: 14px;
-    }
-    .checkbox {
       margin-top: 10px;
-      margin-bottom: 15px;
-    }
-    .btn {
-      background-color: orange;
-      color: #111;
-      padding: 10px 20px;
-      border: none;
       border-radius: 5px;
-      font-size: 16px;
+      border: none;
+    }
+    button {
+      background-color: gold;
+      color: black;
+      font-weight: bold;
       cursor: pointer;
     }
-    .btn:hover {
-      background-color: #ffcc66;
-    }
-    .footer {
-      font-size: 12px;
-      color: #ccc;
-      margin-top: 20px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
     a {
-      color: orange;
-      text-decoration: none;
+      color: #ffd98a;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      font-size: 0.9em;
+      background-color: #111;
+    }
+    .business-info {
+      max-width: 900px;
+      margin: 18px auto 12px;
+      padding: 14px 16px;
+      border: 1px solid rgba(212,175,55,.35);
+      border-radius: 12px;
+      background: rgba(255,255,255,.06);
+      color: #eee;
+      text-align: left;
+    }
+    .business-info h2 {
+      margin: 0 0 6px;
+      color: gold;
+    }
+    .business-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #ccc;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <div class="logo">
-    <img src="images/sakena-nixon-logo.jpeg" alt="Sakena Nixon Enterprises Logo">
-  </div>
+  <!-- Business Identity Block -->
+  <section class="business-info">
+    <h2>Sakena Nixon Enterprises — Official Website</h2>
+    <p>Earl Bot Alerts (educational SMS notifications).</p>
+    <ul>
+      <li><strong>Address:</strong> 1827 Swan Drive, Macon, GA 31204, USA</li>
+      <li><strong>Phone:</strong> <a href="tel:+18444109350">(844) 410-9350</a></li>
+      <li><strong>Email:</strong> <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></li>
+    </ul>
+  </section>
 
-  <!-- Title -->
-  <h1>SMS Alerts for Earl Bot</h1>
-  <p>Get real-time financial alerts powered by Earl Bot from Sakena Nixon Enterprises.</p>
+  <!-- Logo -->
+  <header>
+    <img src="sakena-logo.png" alt="Sakena Nixon Enterprises Logo" width="120">
+    <h1>SMS Alerts for Earl Bot</h1>
+    <p>Get real-time financial alerts powered by Earl Bot from Sakena Nixon Enterprises.</p>
+  </header>
 
   <!-- Form -->
-  <form action="#" method="post">
-    <input type="text" name="first_name" placeholder="First Name" required><br>
-    <input type="text" name="last_name" placeholder="Last Name" required><br>
-    <input type="email" name="email" placeholder="Email Address" required><br>
-    <input type="tel" name="phone" placeholder="Phone Number" required><br>
+  <form>
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <label>
+      <input type="checkbox" required>
+      I accept the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
+    </label>
 
-    <div class="checkbox">
-      <input type="checkbox" id="terms" name="terms" required>
-      <label for="terms">
-        I accept the <a href="terms.html" target="_blank">Terms of Service</a> and 
-        <a href="privacy.html" target="_blank">Privacy Policy</a>.
-      </label>
-    </div>
+    <p style="font-size:.9rem;color:#ccc;margin-top:8px">
+      By subscribing you agree to our
+      <a href="sms-terms.html">SMS Terms</a>, <a href="privacy.html">Privacy Policy</a>, and <a href="terms.html">Terms of Service</a>.
+      Msg & data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help.
+    </p>
 
-    <button type="submit" class="btn">Subscribe</button>
-
-    <div class="footer">
-      <p>By providing your phone number, you agree to receive SMS alerts from Sakena Nixon Enterprises. 
-      Msg & data rates may apply. Frequency: Up to 4 msgs/month. Reply STOP to cancel.</p>
-    </div>
+    <button type="submit">Subscribe</button>
   </form>
 
   <!-- Footer -->
-  <div class="footer">
-    <p>© 2025 Sakena Nixon Enterprises | All rights reserved.<br>
-    Contact: <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></p>
-  </div>
+  <footer>
+    <p>© 2025 Sakena Nixon Enterprises • <a href="sms-terms.html">SMS Terms</a> • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a></p>
+    <p>Contact: <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></p>
+    <p><a href="https://github.com/earl-bot/earl-alert-optin#readme" target="_blank" rel="noopener">View README on GitHub</a></p>
+  </footer>
 
 </body>
 </html>
