@@ -1,103 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SMS Alerts for Earl Bot</title>
   <style>
     body {
       background-color: #111;
-      color: #f5f5f5;
+      color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 30px;
+      margin: 0;
+      padding: 0;
     }
-    img.logo {
-      max-width: 180px;
-      margin: 15px auto;
+    .logo img {
+      height: 120px;
+      margin-top: 20px;
     }
     h1 {
-      color: #f9b000;
+      color: orange;
       margin-top: 10px;
     }
     form {
-      background-color: #222;
-      padding: 25px;
-      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
       display: inline-block;
+      text-align: left;
+      border-radius: 10px;
       margin-top: 20px;
     }
     input[type="text"], input[type="email"], input[type="tel"] {
-      padding: 10px;
-      margin: 8px;
       width: 250px;
-      border-radius: 5px;
+      padding: 10px;
+      margin: 8px 0;
       border: none;
+      border-radius: 5px;
     }
-    button {
+    label {
+      font-size: 14px;
+    }
+    .checkbox {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    .btn {
+      background-color: orange;
+      color: #111;
       padding: 10px 20px;
-      background-color: #f9b000;
-      color: #000;
       border: none;
       border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
-      margin-top: 10px;
     }
-    .consent {
+    .btn:hover {
+      background-color: #ffcc66;
+    }
+    .footer {
       font-size: 12px;
-      margin-top: 10px;
       color: #ccc;
-    }
-    footer {
-      margin-top: 30px;
-      font-size: 13px;
-      color: #aaa;
+      margin-top: 20px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
     }
     a {
-      color: #f9b000;
+      color: orange;
       text-decoration: none;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logos -->
-  <img src="images/sakena-logo.jpeg" alt="Sakena Nixon Enterprises Logo" class="logo" />
-  <img src="images/just-wins.jpeg" alt="Just Wins Logo" class="logo" />
-  <img src="images/visionaire.jpeg" alt="Visionaire Logo" class="logo" />
+  <!-- Logo -->
+  <div class="logo">
+    <img src="images/sakena-nixon-logo.jpeg" alt="Sakena Nixon Enterprises Logo">
+  </div>
 
-  <!-- Header -->
+  <!-- Title -->
   <h1>SMS Alerts for Earl Bot</h1>
   <p>Get real-time financial alerts powered by Earl Bot from Sakena Nixon Enterprises.</p>
 
-  <!-- Opt-In Form -->
-  <form>
-    <input type="text" placeholder="First Name" required /><br/>
-    <input type="text" placeholder="Last Name" required /><br/>
-    <input type="email" placeholder="Email Address" required /><br/>
-    <input type="tel" placeholder="Phone Number" required /><br/>
+  <!-- Form -->
+  <form action="#" method="post">
+    <input type="text" name="first_name" placeholder="First Name" required><br>
+    <input type="text" name="last_name" placeholder="Last Name" required><br>
+    <input type="email" name="email" placeholder="Email Address" required><br>
+    <input type="tel" name="phone" placeholder="Phone Number" required><br>
 
-    <div class="consent">
-      <label>
-        <input type="checkbox" required />
-        I accept the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.
+    <div class="checkbox">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">
+        I accept the <a href="terms.html" target="_blank">Terms of Service</a> and 
+        <a href="privacy.html" target="_blank">Privacy Policy</a>.
       </label>
     </div>
 
-    <button type="submit">Subscribe</button>
+    <button type="submit" class="btn">Subscribe</button>
 
-    <p class="consent">
-      By providing your phone number, you agree to receive SMS alerts from Sakena Nixon Enterprises.<br/>
-      Msg & data rates may apply. Frequency: Up to 4 msgs/month. Reply STOP to cancel.
-    </p>
+    <div class="footer">
+      <p>By providing your phone number, you agree to receive SMS alerts from Sakena Nixon Enterprises. 
+      Msg & data rates may apply. Frequency: Up to 4 msgs/month. Reply STOP to cancel.</p>
+    </div>
   </form>
 
   <!-- Footer -->
-  <footer>
-    &copy; 2025 Sakena Nixon Enterprises | All rights reserved.<br/>
-    Contact: <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a>
-  </footer>
+  <div class="footer">
+    <p>© 2025 Sakena Nixon Enterprises | All rights reserved.<br>
+    Contact: <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></p>
+  </div>
 
 </body>
 </html>
